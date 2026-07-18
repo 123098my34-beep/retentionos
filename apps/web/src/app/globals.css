@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0b;
+  --foreground: #ededed;
+  --card: #141416;
+  --border: #26262a;
+  --accent: #ff5a3c;
+  --accent-2: #6d5efc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--foreground);
+  transition: opacity 0.15s ease;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #0f0f11;
+  border: 1px solid var(--border);
+  color: var(--foreground);
+  outline: none;
+}
+.input:focus {
+  border-color: var(--accent);
+}
+.navlink:hover {
+  background: #1b1b1f;
+  color: var(--foreground) !important;
+}
