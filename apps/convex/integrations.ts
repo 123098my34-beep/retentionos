@@ -277,7 +277,7 @@ export const syncSource = internalMutation({
 
     const existingCohort = await ctx.db
       .query("cohorts")
-      .withIndex("by_org", (q) => q.eq("orgId", args.orgId))
+      .withIndex("by_org", (q) => q.eq("orgId", src.orgId))
       .first();
     if (!existingCohort) {
       await ctx.db.insert("cohorts", {
