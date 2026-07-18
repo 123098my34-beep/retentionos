@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd ../.. && npm install && npm run build --filter=@hiro/web",
+  "outputDirectory": "apps/web/.next",
+  "installCommand": "cd ../.. && npm install",
+  "framework": "nextjs",
+  "rootDirectory": "apps/web",
+  "env": {
+    "NEXT_PUBLIC_CONVEX_URL": "@hiro_convex_url",
+    "NEXT_PUBLIC_CONVEX_SITE_URL": "@hiro_convex_site_url",
+    "NEXT_PUBLIC_APP_URL": "@hiro_app_url"
+  }
+}

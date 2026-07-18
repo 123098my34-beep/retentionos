@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "convex dev",
     "deploy": "convex deploy",
+    "deploy:ci": "convex deploy --typecheck enable",
     "typecheck": "tsc --noEmit",
     "test": "node --test __tests__/*.test.ts"
   },
