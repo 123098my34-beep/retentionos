@@ -4,10 +4,5 @@
   "outputDirectory": "apps/web/.next",
   "installCommand": "cd ../.. && npm install",
   "framework": "nextjs",
-  "rootDirectory": "apps/web",
-  "env": {
-    "NEXT_PUBLIC_CONVEX_URL": "https://shocking-warbler-536.convex.cloud",
-    "NEXT_PUBLIC_CONVEX_SITE_URL": "https://shocking-warbler-536.convex.site",
-    "NEXT_PUBLIC_APP_URL": "https://hiro-analytics.vercel.app"
-  }
+  "rootDirectory": "apps/web"
 }
